@@ -1,38 +1,69 @@
+body {
+  background-color: rgb(228, 187, 135);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 75vh;
+}
+
+#num {
+  outline: none;
+}
+
+h1 {
+  font-family: system-ui;
+  font-size: 2.5em;
+  color: red;
+  margin: 10px;
+}
+
+div>label {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.userInt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userInt input {
+  font-size: 1.5em;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.userInt button {
+  font-size: 1.4em;
+  border-radius: 5px;
+  background-color: violet;
   color: white;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition-duration: 0.7s;
 }
 
-.App-link {
-  color: #61dafb;
+.userInt button:hover {
+  transform: scale(1.1,1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+
 }
+
